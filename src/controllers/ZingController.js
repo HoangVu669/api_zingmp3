@@ -87,7 +87,7 @@ class ZingController {
     }
     getSuggetKeyword(req, res) {
         ZingMp3.Suggest().then((data) => {
-            console.log(data)
+            res.json(data)
         })
     }
 
